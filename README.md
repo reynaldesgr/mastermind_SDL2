@@ -1,1 +1,1 @@
-# ``MasterMind - SDL2``
+# ``Mastermind - SDL2``
