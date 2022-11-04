@@ -25,18 +25,17 @@ typedef struct{
 } combinaison; 
 
 /* DECLARATIONS DES METHODES */
-void afficher_plateau(int (* plateau)[NB_COLONNES + 2]);
-//void compiler_proposition(int * solution, int *proposition, int * bienp, int * malp);
+void afficher_plateau           (int (* plateau)[NB_COLONNES + 2]);
 
-void affichage_jeu(int (* plateau)[NB_COLONNES + 2]);
-void afficher_solution();
-void prendre_proposition(int (*p)[NB_COLONNES + 2], int prp[NB_COLONNES], int essai);
+void affichage_jeu              (int (* plateau)[NB_COLONNES + 2]);
+void afficher_solution          (void);
+void prendre_proposition        (int (*p)[NB_COLONNES + 2], int prp[NB_COLONNES], int essai);
 
-void initialiser_solution();
-void initialiser_plateau (int (* plateau)[NB_COLONNES + 2]);
+void initialiser_solution       (int * tab, int * germe);
+void initialiser_plateau        (int (* plateau)[NB_COLONNES + 2]);
 
 /* METHODES UTILITAIRES */
-int contenir(int * solution, int c);
+int contenir                    (int * solution, int c);
 
 combinaison compiler_proposition(int * proposition, int * solution); // le prototype est a adapter
 // mettre ici les autres declarations
